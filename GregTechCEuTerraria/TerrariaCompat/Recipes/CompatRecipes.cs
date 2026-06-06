@@ -213,6 +213,9 @@ public static class CompatRecipes
 	]
 	""";
 
+	// gem conversions (use a JSON minifier to edit)
+	private const string Gems = """[{"id":"crafting_shaped/compat_amethyst_vanilla_to_terraria","type":"minecraft:crafting_shaped","inputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"gtceu:flawless_amethyst_gem"}}}]},"outputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"terraria:Amethyst"}}}]}},{"id":"crafting_shaped/compat_topaz_vanilla_to_terraria","type":"minecraft:crafting_shaped","inputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"gtceu:flawless_topaz_gem"}}}]},"outputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"terraria:Topaz"}}}]}},{"id":"crafting_shaped/compat_sapphire_vanilla_to_terraria","type":"minecraft:crafting_shaped","inputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"gtceu:flawless_sapphire_gem"}}}]},"outputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"terraria:Sapphire"}}}]}},{"id":"crafting_shaped/compat_ruby_vanilla_to_terraria","type":"minecraft:crafting_shaped","inputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"gtceu:flawless_ruby_gem"}}}]},"outputs":{"item":[{"content":{"type":"gtceu:sized","count":1,"ingredient":{"item":"terraria:Ruby"}}}]}}]""";
+	
 	// boss summons
 	private const string Casings = """
 	[
@@ -316,7 +319,7 @@ public static class CompatRecipes
 	private static readonly string[] JsonGroups =
 	{
 		HatchesAndBuses, Bootstrap, SteamMachineOverrides, Misc, Casings, Clay,
-		TerrariaIntermediates, TerraPrisma,
+		TerrariaIntermediates, TerraPrisma, Gems,
 	};
 
 	// Per-tier crafting recipes for our custom-block machines
